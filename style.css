@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: "Poppins", sans-serif;
+  background: #bdc3c7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c3e50,
+    #bdc3c7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c3e50,
+    #bdc3c7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 35rem;
+  margin: 0 auto;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.card-header {
+  background-image: url(./img/nathan-dumlao-MA6dgLQNV0I-unsplash.jpg);
+  background-size: cover;
+  background-position: center center;
+  min-height: 15rem;
+  position: relative;
+}
+
+.card-header .user-img {
+  display: inline-block;
+  max-width: 100%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  object-fit: cover;
+  vertical-align: middle;
+  user-select: none;
+  -webkit-user-select: none;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 30%);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card-content {
+  padding: 5rem 2rem 4rem;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+.card-content .description {
+  margin-bottom: 2rem;
+}
+
+.card-content h1 {
+  font-size: 2.3rem;
+  color: #262b40;
+}
+
+.card-content p {
+  font-size: 1.8rem;
+  margin: 0.3rem 0;
+}
+.job {
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+
+.card-content small {
+  font-size: 1.4rem;
+  color: #191919;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #191919;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 30px;
+  width: 65px;
+  height: 45px;
+  cursor: pointer;
+}
+
+a:hover {
+  background-color: #f4f4f4;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+/* SETTING MEDIA FOR CONTAINER */
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 570px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 700px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 920px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
